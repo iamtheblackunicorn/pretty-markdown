@@ -6,6 +6,10 @@ import colorama
 import markdown
 from sys import argv
 from markdown import markdown
+from colorama import init
+
+"""Colorama needs to be initialized."""
+init()
 
 def getFC(fileName):
     """Here we try and get the file """
@@ -13,7 +17,7 @@ def getFC(fileName):
     try:
         return open(fileName).read()
     except Exception as error:
-        print(colorama.Fore.RED + str(error) + colorama.BACK.RESET)
+        print(colorama.Fore.RED + str(error) + colorama.Back.RESET)
 
 def insertStyles(htmlCode, stylesheet, name):
     """We break up the HTML code into a list"""
@@ -52,8 +56,8 @@ def main():
     """If we fail, an error is displayed."""
     try:
         generateHTML(argv[1], argv[2])
-        print(colorama.Fore.GREEN + 'Success!' + colorama.BACK.RESET)
+        print(colorama.Fore.GREEN + 'Success!' + colorama.Back.RESET)
     except Exception as error:
-        print(colorama.Fore.RED + str(error) + colorama.BACK.RESET)
+        print(colorama.Fore.RED + str(error) + colorama.Back.RESET)
 if __name__ == '__main__':
     main()
