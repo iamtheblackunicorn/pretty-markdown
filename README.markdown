@@ -16,7 +16,7 @@ You will need the following tools installed and available from the command-line.
 
 You will also need the path of your stylesheet.
 
-- 1.) Download the tool from [here]().
+- 1.) Download the tool from [here](https://raw.githubusercontent.com/iamtheblackunicorn/pretty-markdown/main/src/pmd.py).
 - 2.) Place in the same directory as your Markdown files.
 - 4.) Open a command-prompt and run the following command.
 ```
