@@ -1,0 +1,5 @@
+colorama
+markdown
+pip
+setuptools
+wheel
