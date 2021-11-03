@@ -1,3 +1,6 @@
+# PRETTY MARKDOWN by Alexander Abraham a.k.a. "The Black Unicorn"
+# Licensed under the MIT license.
+
 import sys
 import colorama
 import markdown
